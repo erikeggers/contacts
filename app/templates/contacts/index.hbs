@@ -4,7 +4,7 @@
 <ul id="contact-list">
   {{#each contact in model}}
     <li>
-      {{link-to model.firstName 'contacts.show' contact}}
+      {{link-to contact.firstName 'contacts.show' contact}}
     </li>
   {{/each}}
 </ul>
