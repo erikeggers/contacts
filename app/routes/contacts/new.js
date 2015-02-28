@@ -1,15 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(){
-    return this.store.createRecord('contact');
-  },
+  // model: function(){
+  //   return this.store.createRecord('contact');
+  // },
 
   actions: {
     save: function(){
-      console.log('You clicked save / new route');
-
-      return true;
+      var data = {
+        "firstName": this.get('firstName'),
+        "lastName": this.get("lastName"),
+        "phoneNumber": this.get("phoneNumber"),
+        "email": this.get("email"),
+        "twitter": this.get("twitter")
+      };
+      console.log(data);
     },
 
     cancel: function() {
