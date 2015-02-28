@@ -5,6 +5,7 @@
   {{#each contact in model}}
     <li>
       {{link-to contact.firstName 'contacts.show' contact}}
+      {{log contact}}
     </li>
   {{/each}}
 </ul>

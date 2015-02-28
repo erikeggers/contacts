@@ -10,7 +10,7 @@ Router.map(function() {
     this.route('new');
 
     this.route('show', {
-      path: ':contact_id'
+      path: '/show/:objectId'
     });
   });
 });
