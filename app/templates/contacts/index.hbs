@@ -1,15 +1,12 @@
-<h2>Contacts Index</h2>
-<h3>Total contacts: {{model.length}}</h3>
+<h3 class="total">Total contacts: {{model.length}}</h3>
 
-<ul id="contact-list">
+<ul class="contact-list">
   {{#each contact in model}}
     <li>
-      {{link-to contact.firstName 'contacts.show' contact}}
-      {{log contact}}
+      {{#link-to 'contacts.show' contact}}
+        {{contact.firstName}} {{contact.lastName}}
+      {{/link-to}}
     </li>
   {{/each}}
 </ul>
-
-{{#link-to 'contacts.new'}}
-Add a new contact
-{{/link-to}}
+{{#link-to 'contacts.new' class='add-new'}}Add a new contact{{/link-to}}

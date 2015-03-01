@@ -2,36 +2,42 @@
   <!-- <h2>{{errorMessage}}</h2> -->
   <p>
     <label>First Name:
-      {{input value=firstName}}
+      {{input value=model.firstName}}
     </label>
   </p>
   <p>
     <label>Last Name:
-      {{input value=lastName}}
+      {{input value=model.lastName}}
     </label>
   </p>
   <p>
     <label>Phone Number:
-      {{input value=phoneNumber}}
+      {{input value=model.phoneNumber}}
     </label>
   </p>
   <p>
     <label>Email:
-      {{input value=email}}
+      {{input value=model.email}}
     </label>
   </p>
   <p>
     <label>Twitter:
-      {{input value=twitter}}
+      {{input value=model.twitter}}
     </label>
   </p>
   <div>
-    <h2>Contact Details</h2>
+    <h3 class="contact-details">Contact Details</h3>
     <p>
-      {{firstName}} {{lastName}}
+      {{model.firstName}} {{model.lastName}}
     </p>
     <p>
-      {{phoneNumber}}
+      {{model.phoneNumber}}
+    </p>
+    <p>
+      {{model.email}}
+    </p>
+    <p>
+      {{model.twitter}}
     </p>
   </div>
   <input type="submit" value="Save"/>

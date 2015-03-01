@@ -5,11 +5,11 @@ export default Ember.Controller.extend({
   actions: {
     save: function(){
       var data = {
-        "firstName": this.get('firstName'),
-        "lastName": this.get("lastName"),
-        "phoneNumber": this.get("phoneNumber"),
-        "email": this.get("email"),
-        "twitter": this.get("twitter")
+        "firstName": this.get('model.firstName'),
+        "lastName": this.get("model.lastName"),
+        "phoneNumber": this.get("model.phoneNumber"),
+        "email": this.get("model.email"),
+        "twitter": this.get("model.twitter")
       };
       console.log(data);
       var _this = this;

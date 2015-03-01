@@ -10,7 +10,11 @@ Router.map(function() {
     this.route('new');
 
     this.route('show', {
-      path: '/show/:objectId'
+      path: ':objectId'
+    });
+
+    this.route('edit', {
+      path: ':objectId/edit'
     });
   });
 });
