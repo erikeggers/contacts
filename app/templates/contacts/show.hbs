@@ -5,8 +5,9 @@
   <li>Email: {{model.email}}</li>
   <li>Twitter: {{model.twitter}}</li>
 </ul>
-{{link-to "Edit info" "contacts.edit" model}}
-<a href="#" {{action "delete" contact}}>Delete</a>
-
-{{#link-to 'contacts'}}Back to contact list{{/link-to}}
+<div class="contact-detail-nav">
+  {{link-to "Edit info" "contacts.edit" model}}
+  <a href="#" {{action "delete" contact}}>Delete</a>
+  {{#link-to 'contacts'}}Back to contact list{{/link-to}}
+</div>
 {{outlet}}

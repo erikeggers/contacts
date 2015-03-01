@@ -63,3 +63,15 @@ form {
 .contact-details {
   margin-left: 0px;
 }
+
+.contact-detail-nav {
+  margin-left: 10px;
+}
+
+.contact-detail-nav a {
+  margin-right: 12px;
+  padding: 3px;
+  text-decoration: none;
+  color: #F2F2F2;
+  background-color: #3c3c3c;
+}
