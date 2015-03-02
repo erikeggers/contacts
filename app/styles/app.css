@@ -32,7 +32,7 @@ li {
 
 li:nth-child(2n+0) {
   padding: 2px;
-  background: #c0c0c0;
+  background: #e1e1e1;
 }
 
 ul li a {
