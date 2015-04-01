@@ -16,8 +16,9 @@ export default Ember.Controller.extend({
       Ember.$.ajax({
         url: "https://api.parse.com/1/classes/contact",
         type: "POST",
-        data: JSON.stringify(data)
-      }).done(function() {
+        // data: JSON.stringify(data)
+      })
+      .done(function() {
         _this.transitionToRoute('contacts');
       });
     },
